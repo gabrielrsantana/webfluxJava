@@ -16,10 +16,12 @@ public class HelloWorldController {
      * Composição de Fluxos: Mono permite compor fluxos de dados de maneira declarativa, facilitando a combinação de múltiplas operações assíncronas.
      * Suporte Nativo no Spring WebFlux: Mono é totalmente suportado pelo Spring WebFlux, o que facilita a integração e o desenvolvimento de aplicações reativas com Spring Boot.
      * Essas vantagens tornam o Mono uma escolha poderosa para construir aplicações modernas e reativas
-     * @return
+     * @return String
      */
     @GetMapping("/hello")
     public Mono<String> hello() {
         return Mono.just("Olá, Mundo!");
     }
+
+
 }
